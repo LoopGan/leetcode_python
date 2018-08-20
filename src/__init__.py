@@ -2,8 +2,8 @@
 # -*- coding:utf-8 -*-
 
 """
-    @author: ganw
-    @contact: wei.gan@emc.com
+    @author: LoopGan
+    @contact: ganwei4955@gamil.com
     @time: 8/15/2018 10:34 AM
 """
 
