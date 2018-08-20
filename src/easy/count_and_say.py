@@ -8,7 +8,6 @@
 """
 
 
-
 class Solution:
     def countAndSay(self, n):
         result = "1"
@@ -24,6 +23,7 @@ class Solution:
                 count += 1
             result = current_result + str(count) + pre_value
         return result
+
 
 if __name__ == "__main__":
     ss = Solution()
