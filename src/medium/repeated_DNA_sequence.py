@@ -9,15 +9,18 @@
 
 
 class Solution:
-    def findRepeatedDnaSequence(self, s):
-        left, right = 0, len(s) - 1
-        result = []
-        while left < right:
-            if s[left:left + 10] == s[right - 10:right] and (left + 10) < (right - 10):
-                result.append(s[left:left + 10])
-
-        return s
+    def findRepeatedDnaSequences(self, s):
+        results_dict = {}
+        res = set()
+        for i in range(len(s) - 9):
+            if s[i:i + 10] in results_dict:
+                res.add(s[i:i + 10])
+            results_dict[s[i:i + 10]] = 1
+        return list(res)
 
 
 if __name__ == "__main__":
+    ss = Solution()
+    s = 'AAAAAAAAAAAA'
+    print(ss.findRepeatedDnaSequences(s))
     print("hello imp")
