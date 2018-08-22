@@ -26,7 +26,7 @@ def decimalToAny(n, x):
 
 
 if __name__ == "__main__":
-    a = 10
-    print(decimalToAny(a, 16))
+    a = 1076881306
+    print(decimalToAny(a, 7))
     print(hex(a))
     print("hello imp")
