@@ -9,7 +9,7 @@
 
 
 class Solution:
-    def thirdMax(self, nums):
+    def thirdMax_back(self, nums):
         nums.sort()
         tmp = []
         for i in nums[::-1]:
@@ -20,9 +20,13 @@ class Solution:
         else:
             return tmp[0]
 
+    def thirdMax(self, nums):
+        print(set(sorted(nums)))
+        return sorted(set(nums))[-3] if len(set(nums)) >= 3 else max(nums)
+
 
 if __name__ == "__main__":
     ss = Solution()
-    nums = [2, 2, 3]
+    nums = [2345, 2300, -1213, 9178, 2980, -6607, -2535, 7676]
     print(ss.thirdMax(nums))
     print("hello imp")
