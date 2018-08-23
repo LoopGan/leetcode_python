@@ -26,7 +26,7 @@ def ping_test(filename):
             print(ip, 'OK')
             status.append('OK')
     df.insert(df.shape[1], 'status', status)
-    df.to_csv('./result.csv', sep='\t')
+    df.to_csv('./result.csv')
 
 
 if __name__ == "__main__":
