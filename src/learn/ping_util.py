@@ -18,14 +18,15 @@ def ping_test(filename):
     for ip in ips:
         result = subprocess.Popen('ping %s -n 1' % ip, stdout=subprocess.PIPE)
         tmp_info = result.stdout.read().decode('utf-8')
-        tmp_status = re.search('timed out', tmp_info)
+        tmp_status = re.search('TTL=', tmp_info)
         if tmp_status:
-            print(ip, 'Not OK')
-            status.append('Not OK')
-        else:
             print(ip, 'OK')
             status.append('OK')
+        else:
+            print(ip, 'Not OK')
+            status.append('Not OK')
     df.insert(df.shape[1], 'status', status)
+    df.to_excel('./result.xlsx')
     df.to_csv('./result.csv')
 
 
