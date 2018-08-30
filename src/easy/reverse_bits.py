@@ -9,7 +9,10 @@
 
 
 class Solution:
-    def reverseBits(self, n):
+    def reverseBit(self,n):
+        pass
+
+    def reverseBits_back(self, n):
         result = 0
         bin_start = bin(n)[2:]
         bin_target = str(bin_start)[::-1]
