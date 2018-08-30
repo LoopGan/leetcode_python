@@ -9,7 +9,7 @@
 
 
 class Solution:
-    def reverseBit(self,n):
+    def reverseBit(self, n):
         pass
 
     def reverseBits_back(self, n):
