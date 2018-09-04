@@ -10,7 +10,6 @@
 
 class Solution:
     def restoreIpAddresses(self, s):
-
         pass
 
 
