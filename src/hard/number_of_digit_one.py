@@ -18,6 +18,7 @@ class Solution:
 
 if __name__ == "__main__":
     n = 824883294
+    len(n)
     ss = Solution()
     print(ss.countDigitOne(n))
     print("hello imp")
